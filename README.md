@@ -75,6 +75,10 @@ To update the dashboard with your own data:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## � Author
+
+-   **Ashish Kr** - *Original Author*
+
+## �📄 License
 
 This project is licensed under the MIT License.
