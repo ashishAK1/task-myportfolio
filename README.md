@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Dashboard
 
-## Getting Started
+A modern, responsive financial portfolio dashboard built with **Next.js 16**, **React 19**, and **Tailwind CSS 4**. This application visualizes investment data including cashflow analysis, bond ratings, maturity profiles, and allocation distributions using **Recharts**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+-   **Key Metrics Overview**: Instant view of total invested amount, average yield, portfolio maturity, and bond count.
+-   **Cashflow Analysis**: Interactive bar chart tracking principal and interest payments over 1, 2, and 5-year periods.
+-   **Investment Distribution**: Pie chart visualizing investments by bond type (Government, PSU, Corporate, etc.).
+-   **Credit Rating Breakdown**: Bar chart displaying portfolio distribution across credit ratings (AAA, AA, etc.).
+-   **Allocation Details**: Visual breakdown of investment per company/entity.
+-   **Maturity Profile**: Chart showing value distribution across different maturity timelines.
+-   **Responsive Design**: Fully optimized for desktop, tablet, and mobile viewing.
+
+## 🛠️ Tech Stack
+
+-   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+-   **UI Library**: [React 19](https://react.dev/)
+-   **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+-   **Charts**: [Recharts](https://recharts.org/)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+
+## 📂 Project Structure
+
+```
+├── app/
+│   ├── page.tsx          # Main dashboard layout and component assembly
+│   ├── layout.tsx        # Global root layout
+│   └── globals.css       # Global styles and Tailwind imports
+├── components/
+│   ├── charts/           # Reusable chart components (Cashflow, Allocation, etc.)
+│   └── ui/               # Shared UI components (MetricCard, etc.)
+├── data/
+│   └── dashboard-data.ts # Mock data used to power the dashboard
+└── public/               # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚡ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd task-my-portfolio
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-## Learn More
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+4.  **Open the dashboard:**
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To update the dashboard with your own data:
+1.  Navigate to `data/dashboard-data.ts`.
+2.  Modify the `mockDashboardData` object to reflect your portfolio's metrics, cashflow, and holdings.
+3.   The types are defined in `types/dashboard.ts` (if applicable) to ensure type safety.
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is licensed under the MIT License.
